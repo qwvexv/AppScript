@@ -1,0 +1,33 @@
+function onFormSubmit(event) {
+
+  record_array = []
+
+  var form = FormApp.openById('1nrRcRCciduvO4HiPJvdxdqn58h1XjNIZceWivFCtn_Y'); // Form ID
+  var formResponses = form.getResponses();
+  var formCount = formResponses.length;
+
+  var formResponse = formResponses[formCount - 1];
+  var itemResponses = formResponse.getItemResponses();
+
+  for (var j = 0; j < itemResponses.length; j++) {
+  var itemResponse = itemResponses[j];
+    var title = itemResponse.getItem().getTitle();
+    var answer = itemResponse.getResponse();
+
+    Logger.log(title);
+    Logger.log(answer);
+
+    record_array.push(answer);
+  }
+   
+  AddRecord(record_array[0], record_array[1], record_array[2], record_array[3], record_array[4], record_array[5]);
+
+} 
+
+function AddRecord(gender, age, state, occupation, overall_satisfaction, area_for_improvement) {
+  var url = 'https://docs.google.com/spreadsheets/d/1T39AQq9sDaorWRvle-ypfHatfQS5z_jdP2rcmpQouTs/edit?resourcekey=&gid=243536429#gid=243536429';   //URL OF GOOGLE SHEET;
+  var ss= SpreadsheetApp.openByUrl(url);
+  var dataSheet = ss.getSheetByName("Survey");
+  dataSheet.appendRow([gender, age, state, occupation, overall_satisfaction, area_for_improvement, new Date()]);
+}
+
