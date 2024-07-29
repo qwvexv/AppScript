@@ -72,7 +72,7 @@ The Marketing Management App is designed to streamline and enhance the marketing
 ### **Prerequisites**
 
 - A Google Account to access the AppSheet app.
-- Access to the this Appsheet link: https://www.appsheet.com/newshortcut/28d66267-be07-4053-a88e-4adf79ec8736.
+- Access to the this Appsheet [link](https://www.appsheet.com/newshortcut/28d66267-be07-4053-a88e-4adf79ec8736).
 
 ### **Installation Steps**
 
@@ -83,7 +83,7 @@ The Marketing Management App is designed to streamline and enhance the marketing
 2. **Install the AppSheet App on Your Device (Optional):**
 
    - **For Mobile Devices:**
-     - If you're accessing the app on a mobile device, you can install the AppSheet mobile app for better performance and offline capabilities.
+     - Accessing the app on a mobile device, install the AppSheet mobile app.
      - Download the AppSheet app from the [Google Play Store](https://play.google.com/store/apps/details?id=com.appsheet.whitelabel.guid_12a0f24d_799b_41b1_a99a_862b1f015da4) or [Apple App Store](https://apps.apple.com/us/app/appsheet/id1241154043).
 
 3. **Use the App:**
